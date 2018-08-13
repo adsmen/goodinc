@@ -10,7 +10,8 @@ html(lang="en")
         include ./mixins/_mixins
         .wrapper
             header.header
-                .container.header__container
+                .header__stub
+                .header__container
                     .header__logo
                         a(href="/")
                             img(src="./assets/images/header/logo.png", alt="" class="header__logo-img")
@@ -21,5 +22,7 @@ html(lang="en")
                         .header__dropdowns-contacts-container
                             input(type="text" class="header__dropdowns-contacts" placeholder="Contact")                        
                             +input(false)
-            section.section
-                img(src="https://ic.pics.livejournal.com/yanson/1803207/106930/106930_600.gif", width="300px" height="300px" style="left:0; top:50%;position:absolute;display:none" alt="")
+                .header__stub--last
+                nav.nav
+                
+                

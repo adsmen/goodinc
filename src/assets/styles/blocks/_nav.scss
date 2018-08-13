@@ -1,0 +1,11 @@
+.nav{
+    background: $navigationBackground;
+    min-width: 1246px;
+    margin-left: 304px;
+    min-height: 69px;
+    grid-column: 1/4;
+    &:after{
+        background: #000;
+        grid-column: 0/1;
+    }
+}

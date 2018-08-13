@@ -1,7 +1,11 @@
 .header{
-    background: $headerColor;
-    max-height: 69px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 304px 946px 306px;
+    grid-template-rows: 67px 69px;
+
+    // background: $headerColor;
+    // max-height: 69px;
+    // width: 100%;
 }
 
 .header__dropdowns{
@@ -18,12 +22,25 @@
 .header__container{
     display: flex;
     justify-content: space-between;
+    grid-column: 2/3;
+    background: $headerColor;
+}
+
+.header__stub{
+    grid-column: 1/2;
+    background: $headerColor;
+    &--last{
+        grid-column: 3/4;
+        background: #373737;
+    }
 }
 
 
 .header__dropdowns-news{
     width: 179px;
     height: 36px;
+    padding-left: 40px;
+    padding-right: 53px;
 }
 
 .header__dropdowns-contacts{
@@ -47,15 +64,15 @@
 
 .header__dropdowns-map{
     position: absolute;
-    top: 31%;
-    left: 11px;
+    top: 24%;
+    left: 19px;
 }
 
 .header__dropdowns-stub{
     position: absolute;
     right: 0;
     top: 1px;
-    height: 40px;
+    height: 34px;
 }
 
 .header__dropdowns-arrow{
