@@ -1,0 +1,70 @@
+html, body {
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 940px;
+  border: 1px solid white;
+  margin: auto; }
+
+.header {
+  background: #373737;
+  max-height: 69px;
+  width: 100%; }
+
+.header__dropdowns {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: flex-end; }
+
+.header__logo {
+  width: 20%; }
+
+.header__container {
+  display: flex;
+  justify-content: space-between; }
+
+.header__dropdowns-news {
+  width: 179px;
+  height: 36px; }
+
+.header__dropdowns-contacts {
+  width: 145px;
+  height: 36px; }
+
+.header__dropdowns-news-container,
+.header__dropdowns-contacts-container {
+  position: relative; }
+
+.header__dropdowns-contacts-container {
+  margin-left: 20px; }
+
+.header__logo-img {
+  margin-top: 1px; }
+
+.header__dropdowns-map {
+  position: absolute;
+  top: 31%;
+  left: 11px; }
+
+.header__dropdowns-stub {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  height: 40px; }
+
+.header__dropdowns-arrow {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  cursor: pointer; }
+  .header__dropdowns-arrow--up {
+    transform: rotate(180deg);
+    top: 14px; }

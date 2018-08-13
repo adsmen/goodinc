@@ -4,5 +4,22 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="./assets/styles/main.css")
         title Document
     body
+        include ./mixins/_mixins
+        .wrapper
+            header.header
+                .container.header__container
+                    .header__logo
+                        a(href="/")
+                            img(src="./assets/images/header/logo.png", alt="" class="header__logo-img")
+                    .header__dropdowns
+                        .header__dropdowns-news-container
+                            input(type="text" class="header__dropdowns-news" placeholder="Newsletter")
+                            +input(true)                        
+                        .header__dropdowns-contacts-container
+                            input(type="text" class="header__dropdowns-contacts" placeholder="Contact")                        
+                            +input(false)
+            section.section
+                img(src="https://ic.pics.livejournal.com/yanson/1803207/106930/106930_600.gif", width="300px" height="300px" style="left:0; top:50%;position:absolute;display:none" alt="")
