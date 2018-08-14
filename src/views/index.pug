@@ -23,6 +23,35 @@ html(lang="en")
                             input(type="text" class="header__dropdowns-contacts" placeholder="Contact")                        
                             +input(false)
                 .header__stub--last
-                nav.nav
+                section.navigation
+                    .navigation__logo
+                        img(src="./assets/images/header/map.png" class="navigation__logo-img")
+                    nav.navigation__container
+                        ul.navigation__list
+                            li.navigation__item
+                                a(href="" class="navigation__item-link") Portfolio
+                            li.navigation__item
+                                a(href="" class="navigation__item-link") Services
+                            li.navigation__item
+                                a(href="" class="navigation__item-link") Staff
+                            li.navigation__item
+                                a(href="" class="navigation__item-link") Articles
+                            li.navigation__item
+                                a(href="" class="navigation__item-link") Contact
+                    .links
+                        ul.links__list
+                            li.links__item.links__item 
+                                a(class="links__item-nav" href="#") QuickLinks 
+                                    img(src="./assets/images/header/map.png", class="links__item-img")
+                            li.links__item
+                                .arrow
+                                    input(type="text" class="links__item-input" placeholder="Select from dropdown" readonly)                            
+                                    span.arrow__up <
+                                    span.arrow__down >
+                section.find
+
+
+                                                              
+
                 
                 
