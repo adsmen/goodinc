@@ -1,6 +1,9 @@
 .links__list{
     display: flex;
-    margin-left: 150px;
+    margin-left: 117px;
+    & li:last-child{
+        padding-right: 6px;
+    }
     
 }
 

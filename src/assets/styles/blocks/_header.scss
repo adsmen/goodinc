@@ -1,6 +1,6 @@
 .header{
     display: grid;
-    grid-template-columns: 304px 946px 306px;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 67px 69px;
 
     // background: $headerColor;
@@ -33,6 +33,11 @@
         grid-column: 3/4;
         background: #373737;
     }
+    &--white{
+        grid-column:1/2;
+        grid-row:2/3;
+        background: $backgroundMain;
+    }
 }
 
 
@@ -46,6 +51,8 @@
 .header__dropdowns-contacts{
     width: 145px;
     height: 36px;
+    padding-left: 38px;
+    padding-right: 44px;
 }
 
 
@@ -54,8 +61,13 @@
     position: relative;
 }
 
+
+.header__dropdowns-news-container{
+    margin-right: 2px;
+}
 .header__dropdowns-contacts-container{
     margin-left: 20px;
+    margin-right: 5px;
 }
 
 .header__logo-img{
@@ -64,8 +76,8 @@
 
 .header__dropdowns-map{
     position: absolute;
-    top: 24%;
-    left: 19px;
+    top: 28%;
+    left: 15px;
 }
 
 .header__dropdowns-stub{
@@ -75,9 +87,9 @@
     height: 34px;
 }
 
-.header__dropdowns-arrow{
+.header__dropdowns-arrow{   
     position: absolute;
-    top:25px;
+    top:21px;
     right:15px;
     cursor: pointer;
     &--up{

@@ -23,6 +23,7 @@ html(lang="en")
                             input(type="text" class="header__dropdowns-contacts" placeholder="Contact")                        
                             +input(false)
                 .header__stub--last
+                .header__stub--white
                 section.navigation
                     .navigation__logo
                         img(src="./assets/images/header/map.png" class="navigation__logo-img")
@@ -48,10 +49,17 @@ html(lang="en")
                                     input(type="text" class="links__item-input" placeholder="Select from dropdown" readonly)                            
                                     span.arrow__up <
                                     span.arrow__down >
-                section.find
-
-
-                                                              
-
-                
-                
+            section.find
+                .find__inputs
+                    input(type="text" class="find__inputs-input" placeholder="Search for somthing here")
+                    img(src="./assets/images/clock_.svg", alt="" class="find__inputs-img")
+                .find__socials
+                    ul.find__socials-list
+                        li.find__socials-item
+                            a(href="" class="find__socials-nav")
+                        li.find__socials-item
+                            a(href="" class="find__socials-nav")
+                        li.find__socials-item
+                            a(href="" class="find__socials-nav")
+                        li.find__socials-item
+                            a(href="" class="find__socials-nav")

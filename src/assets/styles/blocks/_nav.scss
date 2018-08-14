@@ -1,18 +1,14 @@
 .navigation{
     background: $navigationBackground;
     min-width: 1246px;
-    margin-left: 304px;
     min-height: 69px;
-    grid-column: 1/4;
     display: flex;
     align-items: center;
-    &:after{
-        background: #000;
-        grid-column: 0/1;
-    }
+    grid-column: 2/4;
+    grid-row:2/3;
+
     
 }
-
 .navigation__logo{    
      margin-left: 40px;
 }

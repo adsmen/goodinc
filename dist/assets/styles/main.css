@@ -4,6 +4,10 @@ html, body {
 * {
   box-sizing: border-box; }
 
+.container {
+  width: 940px;
+  margin: auto; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -19,7 +23,7 @@ ul {
 
 .header {
   display: grid;
-  grid-template-columns: 304px 946px 306px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 67px 69px; }
 
 .header__dropdowns {
@@ -43,6 +47,10 @@ ul {
   .header__stub--last {
     grid-column: 3/4;
     background: #373737; }
+  .header__stub--white {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #ebebeb; }
 
 .header__dropdowns-news {
   width: 179px;
@@ -52,22 +60,28 @@ ul {
 
 .header__dropdowns-contacts {
   width: 145px;
-  height: 36px; }
+  height: 36px;
+  padding-left: 38px;
+  padding-right: 44px; }
 
 .header__dropdowns-news-container,
 .header__dropdowns-contacts-container {
   position: relative; }
 
+.header__dropdowns-news-container {
+  margin-right: 2px; }
+
 .header__dropdowns-contacts-container {
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-right: 5px; }
 
 .header__logo-img {
   margin-top: 1px; }
 
 .header__dropdowns-map {
   position: absolute;
-  top: 24%;
-  left: 19px; }
+  top: 28%;
+  left: 15px; }
 
 .header__dropdowns-stub {
   position: absolute;
@@ -77,7 +91,7 @@ ul {
 
 .header__dropdowns-arrow {
   position: absolute;
-  top: 25px;
+  top: 21px;
   right: 15px;
   cursor: pointer; }
   .header__dropdowns-arrow--up {
@@ -87,14 +101,11 @@ ul {
 .navigation {
   background: #474747;
   min-width: 1246px;
-  margin-left: 304px;
   min-height: 69px;
-  grid-column: 1/4;
   display: flex;
-  align-items: center; }
-  .navigation:after {
-    background: #000;
-    grid-column: 0/1; }
+  align-items: center;
+  grid-column: 2/4;
+  grid-row: 2/3; }
 
 .navigation__logo {
   margin-left: 40px; }
@@ -122,7 +133,9 @@ ul {
 
 .links__list {
   display: flex;
-  margin-left: 150px; }
+  margin-left: 117px; }
+  .links__list li:last-child {
+    padding-right: 6px; }
 
 .links__item {
   color: #d5d5d5;
@@ -156,7 +169,9 @@ ul {
   display: inline-block;
   position: absolute;
   right: 15px;
-  font-size: 11px; }
+  top: -1px;
+  font-size: 11px;
+  cursor: pointer; }
 
 .arrow__down {
   display: inline-block;
@@ -164,4 +179,23 @@ ul {
   position: absolute;
   right: 15px;
   font-size: 11px;
-  top: 10px; }
+  top: 8px;
+  cursor: pointer; }
+
+.find {
+  position: relative;
+  margin-top: 25px; }
+
+.find__inputs {
+  position: absolute;
+  left: 25%; }
+
+.find__inputs-input {
+  padding-left: 20px; }
+
+.find__inputs-input {
+  width: 300px;
+  height: 46px; }
+
+.find__inputs-img {
+  position: absolute; }
